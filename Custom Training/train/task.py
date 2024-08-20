@@ -10,10 +10,10 @@ import os
 import joblib
 
 # Initalizing variables.
-PROJECT_ID = 'your-project-name'
+PROJECT_ID = 'brave-smile-424210-m0'
 model_file_name="model.pkl" 
-bucket_name = 'your-project-name'
-REGION = 'us-central1'
+bucket_name = 'testbucketbinod'
+REGION = 'us'
 ARTIFACT_URI=f"gs://{bucket_name}/model"
 BLOB_NAME = 'model/' + model_file_name
 print(ARTIFACT_URI)
