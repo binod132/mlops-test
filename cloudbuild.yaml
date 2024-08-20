@@ -7,5 +7,7 @@ steps:
 
   - name: gcr.io/cloud-builders/docker
     args: ['push', 'asia-docker.pkg.dev/${PROJECT_ID}/mlops-test/${REPO_NAME}:${BRANCH_NAME}']
-
+options:
+  logging: CLOUD_LOGGING_ONLY
+serviceAccount: cloudbuild@brave-smile-424210-m0.iam.gserviceaccount.com
 timeout: 1500s
