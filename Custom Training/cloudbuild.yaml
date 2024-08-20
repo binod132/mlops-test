@@ -11,8 +11,4 @@ steps:
   - name: gcr.io/cloud-builders/gcloud
     args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', '${_HELM_DIR_} && ${_HELM_COMMAND_} --kubeconfig=${_KUBE_CONFIG_}','--quiet']
 
-options:
-  logging: CLOUD_LOGGING_ONLY
-serviceAccount: cloudbuild@anydone-dev.iam.gserviceaccount.com
-
 timeout: 1500s
